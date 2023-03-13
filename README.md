@@ -4,7 +4,7 @@ JavaScript Practice Code
 
 # script_1.js -->
 
-Functions
+Functions & ARROW FUNCTION
 
 # script_2.js -->
 
@@ -37,3 +37,7 @@ let a = 10 \\ Here occure this type of error cause 'a' is in the Temporal Dead Z
 # or
 
 console.log(x) \\ This is also reference error cause x is not define in code
+
+# script_6.js
+
+Block - BlockScope - Shadowing - Illegal Shadowing
