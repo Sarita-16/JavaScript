@@ -16,7 +16,7 @@ loosely type language
 
 # script_4.js -->
 
-Scope Chain
+Scope Chain & Lexical Environment
 
 # script_5.js -->
 
@@ -41,3 +41,5 @@ console.log(x) \\ This is also reference error cause x is not define in code
 # script_6.js
 
 Block - BlockScope - Shadowing - Illegal Shadowing
+
+# script_7.js
