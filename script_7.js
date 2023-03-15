@@ -30,4 +30,6 @@ function s(){
     function u(){
         console.log(t)
     }
+    return u
 }
+s()
