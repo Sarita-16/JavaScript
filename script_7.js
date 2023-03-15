@@ -1,3 +1,5 @@
+
+
 // Closure : Function with it's Lexical Scope forms a Closure
 
 function a(){
@@ -18,8 +20,10 @@ console.log(q)
 
 
 // We can pass a function inside into a function as a parameter
-a(function r(){
-    console.log(x)
+function d(f){
+    var e = 9
+}
+d(function r(){ 
     console.log("We can pass a function inside into a function as a parameter.")
 })
 
@@ -27,9 +31,32 @@ a(function r(){
 // Return function outside of a function
 function s(){
     var t = 5
-    function u(){
-        console.log(t)
-    }
+    function u(){               // Or we can also write --->  
+        console.log(t)          // return function u(){ console.log(t) }
+    }                           
     return u
 }
-s()
+var v = s()
+console.log(v)
+v()   
+
+
+
+
+
+
+
+// Example of Closure
+function x(){
+    var a = 1
+    function y(){
+        var b = 2
+        function z(){
+            var c = 3
+            console.log("a : " + a + "\nb : " + b + "\nc : " + c)
+        }
+        z()
+    }
+    y()
+}
+x()

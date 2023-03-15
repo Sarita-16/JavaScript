@@ -43,3 +43,15 @@ console.log(x) \\ This is also reference error cause x is not define in code
 Block - BlockScope - Shadowing - Illegal Shadowing
 
 # script_7.js
+
+Closure : Closure is the combination of a function that bundled together with reference to its Lexical Environment.
+
+\\ Use of Closure ----->
+
+1. Module Design Pattern
+2. Currying
+3. Functions like once
+4. Memoize
+5. Maintaining state in async world
+6. Set Time Outs
+7. Iterators
