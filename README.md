@@ -55,3 +55,7 @@ Closure : Closure is the combination of a function that bundled together with re
 5. Maintaining state in async world
 6. Set Time Outs
 7. Iterators
+
+# script_8.js
+
+Currying --- > Using bind() method & Using closure function
