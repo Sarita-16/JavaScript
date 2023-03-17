@@ -36,3 +36,12 @@ let sumOfEight = sum(8)     // x = 8
 sumOfEight(5)       // y = 5
 
 
+
+// Example : 2 using function currying syntax
+let s = function(x){
+    return function (y){
+        return x + y
+    }
+}
+let sumOfTen = s(10)(5)   // x = 10 & y = 5
+console.log(sumOfTen)

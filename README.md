@@ -59,3 +59,13 @@ Closure : Closure is the combination of a function that bundled together with re
 # script_8.js
 
 Currying --- > Using bind() method & Using closure function
+
+# practice.js
+
+1. Sum of 2 numbers using Function
+2. Sum of array elements
+3. Sum of arrays element using function Without passing Parameter
+4. Sum of arrays element using function With passing Parameter
+5. Insert in the begining of an Array \\ unshift() method add one or more new elements to the beginning of an Array & return a new Array
+6. Insert at the end of an Array \\ push() method add one or more elements to the end of an Array & return a new Array
+7. Insert in any position/middle of an Array \\ slice() method add or replace one or more elements to the in any position/middle of an Array
