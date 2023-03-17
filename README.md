@@ -69,3 +69,7 @@ Currying --- > Using bind() method & Using closure function
 5. Insert in the begining of an Array \\ unshift() method add one or more new elements to the beginning of an Array & return a new Array
 6. Insert at the end of an Array \\ push() method add one or more elements to the end of an Array & return a new Array
 7. Insert in any position/middle of an Array \\ slice() method add or replace one or more elements to the in any position/middle of an Array
+
+# script_9.js
+
+setTimeout
