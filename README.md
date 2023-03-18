@@ -60,7 +60,7 @@ Closure : Closure is the combination of a function that bundled together with re
 
 Currying --- > Using bind() method & Using closure function
 
-# practice.js
+# practiceDay1.js
 
 1. Sum of 2 numbers using Function
 2. Sum of array elements
@@ -73,3 +73,12 @@ Currying --- > Using bind() method & Using closure function
 # script_9.js
 
 setTimeout
+
+# practiceDay2.js
+
+1. Multiply each array elements by 2
+2. Multiply each array elements by 2 using 'map' method
+3. Find all elements that are greater than 99 in an Array
+4. Find all elements that are greater than 99 in an Array using filter() method
+5. Sort an Array Numbers(Ascending Order)
+6. Sort an Array Numbers(Ascending Order & Descending Order) using sort() method
