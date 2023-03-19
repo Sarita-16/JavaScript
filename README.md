@@ -89,3 +89,22 @@ setTimeout
 2. Convert Celsius to Fahrenheit
 3. Find max & min numbers in an Array
 4. Find max & min numbers in an Array using \\max() & \\min() method
+   \\... -> spread operator : It unfolds an array. Math.max(...[1, 3, 2]) == Math.max(1, 3, 2)
+
+# script_11.js
+
+\\ Function Statement
+
+\\ Function Expression
+
+\\ Function Declaration
+
+\\ Anonymous Function
+
+\\ Named Function Expression
+
+\\ Difference between Parameters & Arguments
+
+\\ First Class Function
+
+\\ Arrow Function

@@ -27,7 +27,7 @@ let calculator = function(a, b, operation){
             break
     }
 }
-calculator(8, 2, '+')
+calculator(8.123, 0, '/')
 
 
 
@@ -66,7 +66,7 @@ findMaxMin([8, 0, 95, 6, 42, 25, 125, 44])
 
 // Find max & min numbers in an Array using max() & min() method
 let maxMin = function(array){
-    let max = Math.max(...array)
+    let max = Math.max(...array)  // ... -> spread operator - unfolds an array, Math.max(...[1, 3, 2]) == Math.max(1, 3, 2)
     console.log("Maximum number of an Array using max() method is : " + max)
     let min = Math.min(...array)
     console.log("Minimum number of an Array using min() method is : " + min)
