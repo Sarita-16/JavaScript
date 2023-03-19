@@ -67,7 +67,7 @@ let sortNumbers = function(array){
     b = a-b
     a = a-b
     return (a, b)
-}           */
+}           */ 
 sortNumbers([90, 50, 40, 80, 20, 0, 10, 70])
 
 

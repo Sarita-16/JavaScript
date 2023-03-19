@@ -77,8 +77,15 @@ setTimeout
 # practiceDay2.js
 
 1. Multiply each array elements by 2
-2. Multiply each array elements by 2 using 'map' method
+2. Multiply each array elements by 2 using \\map() method
 3. Find all elements that are greater than 99 in an Array
-4. Find all elements that are greater than 99 in an Array using filter() method
+4. Find all elements that are greater than 99 in an Array using \\filter() method
 5. Sort an Array Numbers(Ascending Order)
-6. Sort an Array Numbers(Ascending Order & Descending Order) using sort() method
+6. Sort an Array Numbers(Ascending Order & Descending Order) using \\sort() method
+
+# practiceDay3.js
+
+1. Create a calculator using Switch Statement : '+' '-' '\*' '/'
+2. Convert Celsius to Fahrenheit
+3. Find max & min numbers in an Array
+4. Find max & min numbers in an Array using \\max() & \\min() method
