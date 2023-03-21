@@ -108,3 +108,11 @@ setTimeout
 \\ First Class Function
 
 \\ Arrow Function
+
+# practiceDay4.js
+
+1. Reverse a String : "Hello" --> "Olleh"
+   \\ split("") --> ["h", "e", "l", "l", "o"]
+   \\ reverse() --> ["o", "l", "l", "e", "h"]
+   \\ join("") --> "olleh"
+2. Reverse String : "Hello World" --> "Olleh Dlrow"
