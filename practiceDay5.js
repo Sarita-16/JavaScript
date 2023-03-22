@@ -12,7 +12,7 @@ multiplication(9);
 // 2.Remove space from a String
 let string = function (str) {
   let removeSpace1 = str.trim();
-  let removeSpace2 = str.replace(/ /g, "");
+  let removeSpace2 = str.replace(/ /g, ""); //regex expression
   console.log(
     "Remove Space from a String using 'trim()' method : " + removeSpace1
   );
@@ -21,4 +21,4 @@ let string = function (str) {
   );
 };
 
-string(" Hello World ");
+string(" Hello World Sarita     ");

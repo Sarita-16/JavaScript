@@ -126,4 +126,6 @@ setTimeout
 1. Multiplication Table
 2. Remove space from a String  
    \\'trim()' method removes whitespace from both sides of a string
-   \\'replace()' method
+   \\'replace()' method --> regex expression
+
+# practiceDay5_multiplicationTable.js|html
