@@ -116,3 +116,14 @@ setTimeout
    \\ reverse() --> ["o", "l", "l", "e", "h"]
    \\ join("") --> "olleh"
 2. Reverse String : "Hello World" --> "Olleh Dlrow"
+
+# practiceDay4_calculator.js|.html
+
+# practiceDay4_celsiusToFahrenheit.js|.html
+
+# practiceDay5.js
+
+1. Multiplication Table
+2. Remove space from a String  
+   \\'trim()' method removes whitespace from both sides of a string
+   \\'replace()' method
