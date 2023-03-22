@@ -36,6 +36,6 @@ let submitHandler = () => {
   let operation = document.getElementById("operation").value;
   console.log("test - ", fName, sName, operation);
 
-  let result = calculator(+fName, +sName, operation);
-  document.getElementById("result").innerHTML = result;
+  let print = calculator(+fName, +sName, operation);
+  document.getElementById("result").innerHTML = print;
 };
