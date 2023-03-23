@@ -15,16 +15,12 @@ let frequency = function (key, array) {
   for (i = 0; i <= array.length; i++) {
     if (array[i] == key) {
       count++;
-    } else {
-      flag = 1;
     }
   }
-
-  console.log(count);
-  if (flag == 1) {
+  if (count == 0) {
     console.log("Element is not present in Array. 😉");
   } else {
     console.log("Number of element present in an Array : " + count);
   }
 };
-frequency(5, [5, 9, 1, 1, 1, 5, 0, 2, 4, 2, 25]);
+frequency(15, [5, 9, 1, 1, 1, 5, 0, 2, 4, 2, 25]);
