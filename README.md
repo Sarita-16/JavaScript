@@ -123,9 +123,14 @@ setTimeout
 
 # practiceDay5.js
 
-1. Multiplication Table
+1. Multiplication Table using for loop
 2. Remove space from a String  
    \\'trim()' method removes whitespace from both sides of a string
    \\'replace()' method --> regex expression
 
 # practiceDay5_multiplicationTable.js|html
+
+# practiceDay6.js
+
+1. Multiplication Table using for-each loop
+2. Frequency of elements in an Array

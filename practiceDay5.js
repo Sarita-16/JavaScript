@@ -1,5 +1,4 @@
-// 1.Multiplication Table
-
+// 1.Multiplication Table using for loop
 let multiplication = function (number) {
   console.log("Multiplication Table of " + number + "--->");
   for (let i = 1; i <= 10; i++) {
