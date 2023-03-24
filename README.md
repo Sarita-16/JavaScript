@@ -68,7 +68,7 @@ Currying --- > Using bind() method & Using closure function
 4. Sum of arrays element using function With passing Parameter
 5. Insert in the begining of an Array \\ unshift() method add one or more new elements to the beginning of an Array & return a new Array
 6. Insert at the end of an Array \\ push() method add one or more elements to the end of an Array & return a new Array
-7. Insert in any position/middle of an Array \\ slice() method add or replace one or more elements to the in any position/middle of an Array
+7. Insert in any position/middle of an Array \\ splice() method add or replace one or more elements to the in any position/middle of an Array
 
 # script_9.js
 
@@ -139,6 +139,10 @@ setTimeout
 
 1. Find occurence of all elements in an Array using forEach loop
 2. Empty an Array using 4 methods
+   \\ Assigning it to a new empty array
+   \\ Setting its length to zero
+   \\ Using splice() method
+   \\ Using pop() method
 3. Check if an integer is a number \\Number.isInteger() method : static method determines whether the passed value is an integer
 4. Array check using \\ Array.isArray() method : static method determines whether the passed value is an Array
 5. Suppose you have 2 arrays. Check 2 arrays are equal or not
