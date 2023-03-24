@@ -132,5 +132,13 @@ setTimeout
 
 # practiceDay6.js
 
-1. Multiplication Table using for-each loop
+1. Frequency of elements in an Array using for-each loop
 2. Frequency of elements in an Array
+
+# practiceDay7.js
+
+1. Find occurence of all elements in an Array using forEach loop
+2. Empty an Array using 4 methods
+3. Check if an integer is a number \\Number.isInteger() method : static method determines whether the passed value is an integer
+4. Array check using \\ Array.isArray() method : static method determines whether the passed value is an Array
+5. Suppose you have 2 arrays. Check 2 arrays are equal or not
