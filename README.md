@@ -146,3 +146,15 @@ setTimeout
 3. Check if an integer is a number \\Number.isInteger() method : static method determines whether the passed value is an integer
 4. Array check using \\ Array.isArray() method : static method determines whether the passed value is an Array
 5. Suppose you have 2 arrays. Check 2 arrays are equal or not
+
+# script_12.js
+
+1. What is Callback function in JS : \\ A callback is a function passed as an argument to another function
+   \\ setTimeout : 1 second = 1000 milliseconds.
+2. JS is a synchronous & single- threaded language
+3. Blocking the main thread
+4. Power of Callback
+5. Deep about Event listeners
+6. Closure Demo with Event listeners
+7. Scope Demo with Event listeners
+8. Garbage collection & remove Event listeners
