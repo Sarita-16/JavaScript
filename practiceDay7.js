@@ -10,7 +10,14 @@ const occurance = function (array) {
   });
   console.log(count);
 };
-
+/* 
+  count = {
+    1: 2,
+    2: 2,
+    3: 3,
+    4: 1,
+  }
+*/
 occurance([1, 1, 2, 3, 4, 2, 3, 3]);
 
 // 2.Empty an Array using 4 methods
@@ -65,27 +72,22 @@ checkArray("[]");
 console.log(Array.isArray([]));
 
 // 5.Suppose you have 2 arrays. Check 2 arrays are equal or not
+let flag = 1;
 let equivalent = function (arr1, arr2) {
-  if (arr1.length == arr2.length) {
-    let flag = 1;
-    for (let i = 0; i < arr1.length; i++) {
-      for (let j = 0; j < arr2.length; j++) {
-        if (arr1[i] != arr2[j]) {
-          flag = 0;
-          continue;
-        } else {
-          flag = 1;
-          break;
-        }
+  if (arr1.length === arr2.length) {
+    arr1.forEach((ele, index) => {
+      if (!arr2.includes(ele)) {
+        flag = 0;
+        console.log("2 arrays are not equivalent 😟");
+        return;
       }
-    }
+    });
     if (flag == 1) {
-      console.log("Arrays are equal 😊");
-    } else {
-      console.log("Arrays are not equal 😕");
+      console.log("2 arrays are equivalent 😊");
     }
   } else {
-    console.log("Arrays are not equal 😕");
+    console.log("2 arrays are not equivalent 😟");
   }
 };
+
 equivalent([1, 2, 3, 4, 5], [4, 3, 1, 5, 2]);
