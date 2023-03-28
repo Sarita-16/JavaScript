@@ -163,4 +163,5 @@ setTimeout
 # practiceDay8.js
 
 1. Find 2nd largest element from an Array
-2. Remove duplicates from an Array using set() method \\ set() method : create collections of unique values
+2. Remove duplicates from an Array using foreach & slice() method
+3. Remove duplicates from an Array using set() method \\ set() method : create collections of unique values

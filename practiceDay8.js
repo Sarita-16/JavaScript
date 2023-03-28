@@ -7,26 +7,33 @@ let secondLargest = function (arr) {
 };
 secondLargest([8, 10, 5, 3, 9, 4, 2, 0]);
 
-// Remove duplicates from an Array : [1,1,3,9,3] --> [1,3,9]
+// Remove duplicates from an Array using foreach & slice() method : [1,1,3,9,3] --> [1,3,9]
 let duplicates = function (arr) {
   let count = {};
+  let arr1 = [];
   arr.forEach((element) => {
     if (count[element]) {
       count[element] += 1;
-      arr.splice(arr.indexOf(element), 1);
+      arr.slice(arr.indexOf(element), 1);
     } else {
       count[element] = 1;
-      console.log(element);
+      arr1.push(element);
+      //console.log(element);
     }
   });
-  console.log(arr);
+  console.log(
+    "\nAfter eleminating the duplicates value from the Array using foreach & slice() method is : "
+  );
+  console.log(arr1);
 };
 duplicates([1, 1, 3, 9, 3]);
 
 // Remove duplicates from an Array using set() method
 let duplicate = function (arr) {
   let unique = [...new Set(arr)]; //set() method : create collections of unique values
-  console.log("After eleminating the duplicates value the Array is : ");
+  console.log(
+    "\nAfter eleminating the duplicates value the Array using set() method is : "
+  );
   console.log(unique);
 };
 duplicate([1, 1, 3, 9, 3, 8, 9, 10]);
