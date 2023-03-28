@@ -159,3 +159,8 @@ setTimeout
 6. Closure Demo with Event listeners
 7. Scope Demo with Event listeners
 8. Garbage collection & remove Event listeners
+
+# practiceDay8.js
+
+1. Find 2nd largest element from an Array
+2. Remove duplicates from an Array using set() method \\ set() method : create collections of unique values
