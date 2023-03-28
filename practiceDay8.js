@@ -7,14 +7,13 @@ let secondLargest = function (arr) {
 };
 secondLargest([8, 10, 5, 3, 9, 4, 2, 0]);
 
-// Remove duplicates from an Array using foreach & slice() method : [1,1,3,9,3] --> [1,3,9]
+// Remove duplicates from an Array using foreach() method : [1,1,3,9,3] --> [1,3,9]
 let duplicates = function (arr) {
   let count = {};
   let arr1 = [];
   arr.forEach((element) => {
     if (count[element]) {
       count[element] += 1;
-      arr.slice(arr.indexOf(element), 1);
     } else {
       count[element] = 1;
       arr1.push(element);
