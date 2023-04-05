@@ -169,3 +169,9 @@ setTimeout
 # practiceDay9.js
 
 1. Display the current day and time
+
+# test.js
+
+1. Taking input using readLine
+2. Get Grade using if-else
+3. Get Letter using switch case
