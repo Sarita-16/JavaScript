@@ -163,8 +163,9 @@ setTimeout
 # practiceDay8.js
 
 1. Find 2nd largest element from an Array
-2. Remove duplicates from an Array using foreach() method
-3. Remove duplicates from an Array using set() method \\ set() method : create collections of unique values
+2. Find 2nd largest element from an Array (Another Way)
+3. Remove duplicates from an Array using foreach() method
+4. Remove duplicates from an Array using set() method \\ set() method : create collections of unique values
 
 # practiceDay9.js
 
@@ -175,3 +176,7 @@ setTimeout
 1. Taking input using readLine
 2. Get Grade using if-else
 3. Get Letter using switch case
+4. Reverse a String Using TRY-Catch-Finally Block
+   \\ try{} : statement defines the code block to run
+   \\ catch{} : statement defines a code block to handle any error
+   \\ finally{} : statement defines a code block to run regardless of the result

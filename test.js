@@ -56,3 +56,16 @@ let getLetter = function (s) {
   console.log(letter);
 };
 getLetter("sarita");
+
+// Reverse a String Using TRY-Catch-Finally Block
+let reverseString = function (s) {
+  try {
+    let string = s.split("").reverse().join("");
+    console.log(string);
+    if (typeof s != "string") throw error;
+  } catch (error) {
+    console.log("Input is not a String\n" + s);
+  } finally {
+  }
+};
+reverseString("Sarita");

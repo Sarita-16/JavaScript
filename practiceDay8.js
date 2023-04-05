@@ -7,6 +7,22 @@ let secondLargest = function (arr) {
 };
 secondLargest([8, 10, 5, 3, 9, 4, 2, 0]);
 
+// Find 2nd largest element from an Array (Another Way)
+let secondLarge = function (arr) {
+  let first = -1;
+  let second = -1;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > first) {
+      second = first;
+      first = arr[i];
+    } else if (arr[i] > second && arr[i] != first) {
+      second = arr[i];
+    }
+  }
+  console.log("Second largest element in an Array is : " + second);
+};
+secondLarge([2, 9, 5, 20, 63, 22, 40]);
+
 // Remove duplicates from an Array using foreach() method : [1,1,3,9,3] --> [1,3,9]
 let duplicates = function (arr) {
   let count = {};
