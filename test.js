@@ -62,10 +62,22 @@ let reverseString = function (s) {
   try {
     let string = s.split("").reverse().join("");
     console.log(string);
-    if (typeof s != "string") throw error;
+    if (typeof s !== "string") throw error;
   } catch (error) {
-    console.log("Input is not a String\n" + s);
+    console.log("Input is not a String\n", s);
   } finally {
   }
 };
-reverseString("Sarita");
+reverseString("sarita");
+
+// Creating a Object & compute perimeter & area of Rectangle
+let Rectangle = function (a, b) {
+  let RecObj = {
+    length: a,
+    width: b,
+    perimeter: 2 * (a + b),
+    area: a * b,
+  };
+  console.log(RecObj);
+};
+Rectangle(5, 4);

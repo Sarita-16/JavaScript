@@ -180,3 +180,5 @@ setTimeout
    \\ try{} : statement defines the code block to run
    \\ catch{} : statement defines a code block to handle any error
    \\ finally{} : statement defines a code block to run regardless of the result
+
+5. Creating a Object & compute perimeter & area of Rectangle
