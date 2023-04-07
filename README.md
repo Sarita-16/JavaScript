@@ -186,4 +186,10 @@ setTimeout
 
 # practiceDay10.js
 
+(That's all about OOP in JavaScript )
+
 1. class \\ class : a templete for creating objects
+2. Inheritance
+   \\ Constructor
+   \\ Method
+   \\ Static Method

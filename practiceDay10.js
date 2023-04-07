@@ -1,6 +1,7 @@
-// Class    : class are a templete for creating objects
+// 1. Class    : class are a templete for creating objects
 class Human {
   constructor(givenName, givenAge, givenPosition) {
+    // When we create an object then constructor will run
     this.name = givenName;
     this.age = givenAge;
     this.position = givenPosition;
@@ -8,7 +9,7 @@ class Human {
 
   description() {
     // method
-    console.log(`I am ${this.name} & I'm ${this.age} years old 😊`);
+    console.log(`I am ${this.name} & I'm ${this.age} years old 😊 \n\n`);
   }
 
   birthYear() {
@@ -33,4 +34,36 @@ name2 = new Human("Tania", 30, "PWC"); // name2 is an object
 console.log(name2);
 name2.birthYear();
 
-console.log(`Add 2 numbers using static method : ${Human.add(22, 30)}`);
+console.log(`Add 2 numbers using static method : ${Human.add(22, 30)} \n\n`);
+
+/******************************************************************************************8*/
+
+// 2. Inheritance
+class Programmer extends Human {
+  constructor(givenName, givenAge, givenPosition, givenLanguage) {
+    super(givenName, givenAge, givenPosition);
+    this.language = givenLanguage;
+  }
+
+  favouriteLanguage() {
+    if (this.language == "Python") {
+      console.log(`Favourit language is ${this.language} 😁 \n\n`);
+    } else {
+      console.log(`Favourit language is ${this.language} 😁 \n\n`);
+    }
+  }
+
+  static multiplication(a, b) {
+    return a * b;
+  }
+}
+name3 = new Programmer("Sunny", 33, "Freelancer", "JavaScript");
+console.log(name3);
+name3.favouriteLanguage();
+//console.log(name3.favouriteLanguage());
+console.log(
+  `Add 2 numbers using Inheritance, static method ${Programmer.add(
+    25,
+    50
+  )} (●'◡'●) \n\n`
+);
