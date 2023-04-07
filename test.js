@@ -86,3 +86,13 @@ Rectangle(5, 4);
 let date = new Date();
 let year = date.getFullYear(); // getFullYear() : returns the full year (4 digits) of a date.
 console.log(year);
+
+// Dstructure
+const [a, b] = [5, 25];
+console.log("a --> " + a);
+
+let s1 = b + a;
+let s2 = b - a;
+
+let result = [s1, s2];
+console.log(`Sorting Numbers : ${result.sort((a, b) => a - b)}`); // sorting numbers

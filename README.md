@@ -190,6 +190,11 @@ setTimeout
 
 1. class \\ class : a templete for creating objects
 2. Inheritance
+   \\ super : The super keyword is used to access properties on an object literal or invoke a superclass's constructor.
    \\ Constructor
    \\ Method
    \\ Static Method
+
+# test.js
+
+7. Dstructure & Sorting Number
