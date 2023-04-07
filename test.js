@@ -81,3 +81,8 @@ let Rectangle = function (a, b) {
   console.log(RecObj);
 };
 Rectangle(5, 4);
+
+// Get a Year
+let date = new Date();
+let year = date.getFullYear(); // getFullYear() : returns the full year (4 digits) of a date.
+console.log(year);

@@ -182,3 +182,8 @@ setTimeout
    \\ finally{} : statement defines a code block to run regardless of the result
 
 5. Creating a Object & compute perimeter & area of Rectangle
+6. Get a Year \\ getFullYear() : returns the full year (4 digits) of a date
+
+# practiceDay10.js
+
+1. class \\ class : a templete for creating objects
