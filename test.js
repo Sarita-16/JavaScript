@@ -96,3 +96,17 @@ let s2 = b - a;
 
 let result = [s1, s2];
 console.log(`Sorting Numbers : ${result.sort((a, b) => a - b)}`); // sorting numbers
+
+// Bitwise
+let getMaxLessThanK = function (n, k) {
+  let m = 0;
+  for (let i = 1; i <= n; i++) {
+    for (let j = i + 1; j <= n; j++) {
+      if ((i & j) < k) {
+        m = Math.max(m, i & j);
+      }
+    }
+  }
+  console.log(m);
+};
+getMaxLessThanK([1, 2, 3, 4, 5, 6, 7, 8], 3);
