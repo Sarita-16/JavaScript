@@ -110,3 +110,34 @@ let getMaxLessThanK = function (n, k) {
   console.log(m);
 };
 getMaxLessThanK([1, 2, 3, 4, 5, 6, 7, 8], 3);
+
+// Dates
+let dayName = function (date) {
+  weekDays = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thusday",
+    "Friday",
+    "Saturday",
+  ];
+  let dayNumber = new Date(date);
+  day = weekDays[dayNumber.getDay()];
+  console.log(`The day of the date ${date} is : ${day} 📅`);
+};
+dayName("02/16/2001"); // MM/DD/YYYY
+
+//Any string that begins and ends with the same vowel
+let string = function (str) {
+  let len = str.length;
+  if (str.charAt(0) == str.charAt(len - 1)) {
+    console.log("String begins and ends with the same vowel 👻");
+  } else {
+    console.log("String begins and ends with the different word 😟");
+  }
+};
+string("abcdea");
+
+//RegExp
+//return new RegExp(/^([aeiou]).*\1$/);

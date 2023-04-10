@@ -198,3 +198,6 @@ setTimeout
 # test.js
 
 7. Dstructure & Sorting Number
+8. Bitwise
+9. Dates
+10. Any string that begins and ends with the same vowel
