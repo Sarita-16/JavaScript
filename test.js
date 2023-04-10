@@ -139,5 +139,10 @@ let string = function (str) {
 };
 string("abcdea");
 
-//RegExp
+//RegExp  -----> https://regexr.com/
+let regex = /nice/g; // g = global
+let text = "very very nice awesome nice very good girl";
+console.log(
+  `After replaceing word the text is : ${text.replace(regex, "NICE")}`
+);
 //return new RegExp(/^([aeiou]).*\1$/);

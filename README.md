@@ -201,3 +201,4 @@ setTimeout
 8. Bitwise
 9. Dates
 10. Any string that begins and ends with the same vowel
+11. RegExp
