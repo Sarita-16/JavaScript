@@ -1,5 +1,6 @@
-let submitHandler = () => {
-  let c = 0;
-  c = c + 1;
-  document.getElementById("count").innerHTML = c;
-};
+document.addEventListener("click", clickHandler); // addEventListener() : method & click : event
+
+function clickHandler() {
+  let button = document.getElementById("count").innerHTML;
+  document.getElementById("count").innerHTML = +button + 1; //(+button) = number
+}
