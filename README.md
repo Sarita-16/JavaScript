@@ -206,3 +206,5 @@ setTimeout
 # onClick.html | onClick.js
 
 \\ addEventListener() : method & click : event
+
+# binaryCalculator.html | binaryCalculator.js

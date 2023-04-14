@@ -62,6 +62,14 @@ function clickEql() {
       let eleArray = item.innerHTML.split("-");
       let sub = eleArray[0] - eleArray[1];
       document.getElementById("result").innerHTML = sub;
+    } else if (item.innerHTML.includes("*")) {
+      let eleArray = item.innerHTML.split("*");
+      let mul = eleArray[0] * eleArray[1];
+      document.getElementById("result").innerHTML = mul;
+    } else if (item.innerHTML.includes("/")) {
+      let eleArray = item.innerHTML.split("/");
+      let div = eleArray[0] / eleArray[1];
+      document.getElementById("result").innerHTML = div;
     } else {
       alert("Line must end with numbers 😉");
     }
