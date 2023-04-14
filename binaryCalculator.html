@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary Calculator</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="result"></div>
+      <div id="buttons">
+        <button id="btn0" onclick="clickZero()">0</button>
+        <button id="btn1" onclick="clickOne()">1</button>
+        <button id="btnClr" onclick="clickClr()">C</button>
+        <button id="btnEql" onclick="clickEql()">=</button>
+        <button id="btnSum" onclick="clickSum()">+</button>
+        <button id="btnSub" onclick="clickSub()">-</button>
+        <button id="btnMul" onclick="clickMul()">*</button>
+        <button id="btnDiv" onclick="clickDiv()">/</button>
+      </div>
+    </div>
+    <style>
+      body {
+        width: 33%;
+      }
+      #result {
+        background-color: rgb(200, 198, 248);
+        border: solid;
+        height: 48px;
+        font-size: 20px;
+      }
+      #buttons button {
+        width: 25%;
+        height: 36px;
+        font-size: 18px;
+        margin: 0;
+        float: left;
+      }
+      #btn0,
+      #btn1 {
+        background-color: rgb(147, 135, 225);
+        color: black;
+      }
+      #btnClr,
+      #btnEql {
+        background-color: rgb(31, 12, 92);
+        color: white;
+      }
+      #btnSum,
+      #btnSub,
+      #btnMul,
+      #btnDiv {
+        background-color: rgb(60, 32, 138);
+        color: white;
+      }
+    </style>
+
+    <script src="binaryCalculator.js"></script>
+  </body>
+</html>
