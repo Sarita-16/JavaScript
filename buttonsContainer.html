@@ -13,7 +13,7 @@
       <button id="btn2" class="btnStyle">2</button>
       <button id="btn3" class="btnStyle">3</button>
       <button id="btn4" class="btnStyle">4</button>
-      <button id="btn5" class="btnStyle" onclick="rotate()">5</button>
+      <button id="btn5" class="btnStyle">5</button>
       <button id="btn6" class="btnStyle">6</button>
       <button id="btn7" class="btnStyle">7</button>
       <button id="btn8" class="btnStyle">8</button>
@@ -27,6 +27,17 @@
         width: 30%;
         height: 48px;
         font-size: 24px;
+      }
+
+      div {
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+        transform: rotate(0deg);
+      }
+      .rotated {
+        -ms-transform: rotate(180deg); /* IE 9 */
+        -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+        transform: rotate(180deg);
       }
     </style>
 
