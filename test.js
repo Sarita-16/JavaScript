@@ -146,3 +146,5 @@ console.log(
   `After replaceing word the text is : ${text.replace(regex, "NICE")}`
 );
 //return new RegExp(/^([aeiou]).*\1$/);
+
+// testing
