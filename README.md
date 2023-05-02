@@ -209,10 +209,14 @@ setTimeout
 
 # binaryCalculator.html | binaryCalculator.js
 
-# leetCodeDay1
+# leetCodeDay1.js
 
 \\ Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 Input: nums = [2,7,11,15], target = 9
 Output: [0,1]
 Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 \\ Roman to Integer
+
+# leetCodeDay2.js
+
+\\ A number is palindrome or not
