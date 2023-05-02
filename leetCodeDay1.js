@@ -23,29 +23,23 @@ var twoSum = function (nums, tacharget) {
 twoSum([5, 2, 9, 4, 1], 7);
 
 // charoman to Integechar
-let romanToInt = function (word) {
-  let sum = 0;
-  let value = 0;
-  for (let i = 0; i < word.length; i++) {
-    let char = [];
-    char = word.split("");
-    if (char[i] == "I") {
-      value = 1;
-    } else if (char[i] == "V") {
-      value = 5;
-    } else if (char[i] == "X") {
-      value = 10;
-    } else if (char[i] == "L") {
-      value = 50;
-    } else if (char[i] == "C") {
-      value = 100;
-    } else if (char[i] == "D") {
-      value = 500;
-    } else if (char[i] == "M") {
-      value = 1000;
-    }
-    sum = sum + value;
+symbols = {
+  I: 1,
+  V: 5,
+  X: 10,
+  L: 50,
+  C: 100,
+  D: 500,
+  M: 1000,
+};
+
+var romanToInt = function (s) {
+  value = 0;
+  for (let i = 0; i < s.length; i += 1) {
+    symbols[s[i]] < symbols[s[i + 1]]
+      ? (value -= symbols[s[i]])
+      : (value += symbols[s[i]]);
   }
-  console.log("Roman to Integechar : " + sum);
+  console.log("Roman To Integer : " + value);
 };
 romanToInt("MCMXCIV");
