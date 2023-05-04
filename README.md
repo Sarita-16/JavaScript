@@ -220,3 +220,7 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 # leetCodeDay2.js
 
 \\ A number is palindrome or not
+
+# leetCodeDay3.js
+
+\\ Longest Common Prefix

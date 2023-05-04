@@ -5,9 +5,10 @@ var isPalindrome = function (value) {
   while (value != 0) {
     let r = value % 10;
     sum = r + sum * 10;
-    value = ~~(value / 10);
+    value = ~~(value / 10); // '~~' : double NOT Bitwise operator & Use it as a substitute for Math. floor()
+    //value = Math.floor(value / 10);
   }
   if (sum == n) console.log("The number is Palindrome 😁");
   else console.log("The number is not Palindrome 😟");
 };
-isPalindrome(121);
+isPalindrome(12155);
