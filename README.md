@@ -224,3 +224,4 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 # leetCodeDay3.js
 
 \\ Longest Common Prefix
+\\ Maximum Number of Vowels in a Substring of Given Length

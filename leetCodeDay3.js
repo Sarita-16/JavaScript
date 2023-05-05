@@ -11,3 +11,38 @@ let longestCommonPrefix = function (string) {
   console.log("STRING : " + prefix);
 };
 longestCommonPrefix("flower", "flow", "flight");
+
+// Maximum Number of Vowels in a Substring of Given Length
+let maxVowels = function (s, k) {
+  let a = s.split(""); //[l,e,e,t,c,o,d,e]
+  let max = 0;
+  let i = 0;
+  while (i < s.length) {
+    let remainingCount = s.length - i;
+    if (remainingCount < k) {
+      i--;
+    }
+
+    let count = 0;
+    for (let j = 0; j < k; j++) {
+      if (
+        a[i] == "a" ||
+        a[i] == "e" ||
+        a[i] == "i" ||
+        a[i] == "o" ||
+        a[i] == "u"
+      ) {
+        count++;
+      }
+      i++;
+    }
+    if (max < count) {
+      max = count;
+    }
+  }
+
+  console.log(
+    "Maximum Number of Vowels in a Substring of Given Length : " + max
+  );
+};
+maxVowels("zpuerktejfp", 3);
