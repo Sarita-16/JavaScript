@@ -3,7 +3,10 @@ let maxVowels = function (string, key) {
   let max = 0;
   let arr = string.split("");
   let x = 0;
-  for (let i = 0; i < arr.length; i++) {
+  // for (let i = 0; i < arr.length; i++) {
+  let i = 0;
+  for (;;) {
+    if (i > arr.length - 1) break;
     let count = 0;
     for (let j = 0; j < key; j++) {
       if (
@@ -21,9 +24,10 @@ let maxVowels = function (string, key) {
       max = count;
     }
     x = x - (key - 1);
+    i++;
   }
   console.log(
     "Maximum Number of Vowels in a Substring of Given Length : " + max
   );
 };
-maxVowels("novowels", 1);
+maxVowels("leetcode", 3);
