@@ -228,3 +228,18 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 # leetCodeDay3.js
 
 \\ Maximum Number of Vowels in a Substring of Given Length
+
+# sript_14.js
+
+1. WEB APIs
+   \\ Set Time Out
+   \\ DOM API = Document Object Model
+   \\ fetch()
+
+2. Microtask Queue has higher priority than CallBack Queue
+
+Q. What can come inside the Microtask queue?
+A. All the Call Back Function which comes through promises & Mutation observers will go inside this Microtack Queue.
+
+Q. What can come inside the CallBack queue Or Task Queue?
+A. All the other Call Back Function setTimeOut(), DOM APis, eventListener() ... are from Call Back Queue.
