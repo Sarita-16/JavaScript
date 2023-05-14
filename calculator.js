@@ -2,23 +2,42 @@ const display = document.querySelector("#display");
 const buttons = document.querySelectorAll("button");
 
 //  -------------------------------------------------------------------------------------
-const toggle = document.querySelector(".toggle-input");
-const initialState = localStorage.getItem("toggleState") == "true";
-toggle.checked = initialState;
 
+const toggle = document.querySelector(".toggle-input");
+let isDarkMode = false;
 toggle.addEventListener("change", function () {
-  localStorage.setItem("toggleState", toggle.checked);
+  const calculator = document.querySelector(".calculator");
+  const classes = calculator.classList;
+  if (isDarkMode) {
+    classes.add("dark");
+  } else {
+    classes.remove("dark");
+  }
+  isDarkMode = !isDarkMode;
 });
+
 // --------------------------------------------------------------------------------------
+
+const compare = {
+  "+": (a, b) => a + b,
+  "-": (a, b) => a - b,
+  "*": (a, b) => a * b,
+  "/": (a, b) => a / b,
+  "%": (a, b) => a % b,
+};
 
 buttons.forEach((item) => {
   item.onclick = () => {
+    debugger;
     if (item.id == "clear") {
       display.innerText = "";
     } else if (item.id == "backSpace") {
       let string = display.innerText.toString();
       display.innerText = string.substr(0, string.length - 1);
     } else if (display.innerText != "" && item.id == "equal") {
+      if (display.innerText.includes("%")) {
+        display.innerText = +display.innerText.replace("%", "") / 100;
+      }
       display.innerText = eval(display.innerText);
     } else if (display.innerText == "" && item.id == "equal") {
       display.innerText = "Empty!";
@@ -28,14 +47,3 @@ buttons.forEach((item) => {
     }
   };
 });
-
-const themeToggleBtn = document.querySelector(".theme-toggler");
-const calculator = document.querySelector(".calculator");
-const toggleIcon = document.querySelector(".toggler-icon");
-
-let isDark = true;
-themeToggleBtn.onclick = () => {
-  calculator.classList.toggle("dark");
-  themeToggleBtn.classList.toggle("active");
-  isDark = !isDark;
-};
