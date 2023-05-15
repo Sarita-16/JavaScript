@@ -51,7 +51,6 @@ body {
   position: relative;
   display: inline-block;
   width: 100px;
-  /* 100 */
   margin-left: 100px;
   padding: 4px;
   border-radius: 40px;
@@ -69,10 +68,10 @@ body {
 
 .toggle-bg {
   position: absolute;
-  top: -4px;
-  left: -2px;
-  width: 80%;
-  height: 80%;
+  top: -10px;
+  left: 80px;
+  width: 70%;
+  height: 70%;
   background-color: #C0E6F6;
   border-radius: 20px;
   border: 5px solid #81C0D5;
@@ -81,21 +80,22 @@ body {
 
 .toggle-input {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -4px;
+  left: 67px;
   width: 100%;
-  height: 100%;
+  height: 57%;
   border: 1px solid red;
-  border-radius: 40px;
+  /* border-radius: 40px; */
   z-index: 2;
   opacity: 0;
 }
 
 .toggle-switch {
   position: relative;
-  width: 40px;
-  height: 40px;
-  margin-left: 50px;
+  width: 25px;
+  height: 25px;
+  margin-left: 115px;
+  margin-bottom: 33px;
   background-color: #F5EB42;
   border: 4px solid #E4C74D;
   border-radius: 50%;
@@ -156,7 +156,6 @@ body {
   background-color: #EFEEDA;
   border-radius: 100%;
   border: 4px solid #DEE1C5;
-  box-shadow: 42px -7px 0 -3px #FCFCFC, 75px -10px 0 -3px #FCFCFC, 54px 4px 0 -4px #FCFCFC, 83px 7px 0 -2px #FCFCFC, 63px 18px 0 -4px #FCFCFC, 44px 28px 0 -2px #FCFCFC, 78px 23px 0 -3px #FCFCFC;
   transition: all 0.12s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transform: scale(0);
 }
@@ -164,30 +163,31 @@ body {
 .toggle-switch-figureAlt:before {
   content: "";
   position: absolute;
-  top: -6px;
+  top: -13px;
   left: 18px;
-  width: 7px;
-  height: 7px;
+  width: 0px;
+  height: 0px;
   background-color: #EFEEDA;
   border-radius: 100%;
-  border: 4px solid #DEE1C5;
+  border: 3px solid #DEE1C5;
 }
 
 .toggle-switch-figureAlt:after {
   content: "";
   position: absolute;
-  top: 19px;
-  left: 15px;
-  width: 2px;
-  height: 2px;
+  top: 4px;
+  left: 30px;
+  width: 0px;
+  height: 0px;
   background-color: #EFEEDA;
   border-radius: 100%;
-  border: 4px solid #DEE1C5;
+  border: 3px solid #DEE1C5;
 }
 
 /*  Night State */
 .toggle-input:checked ~ .toggle-switch {
-  margin-left: 0;
+  margin-top: -4px;
+  margin-left: 84px;
   border-color: #DEE1C5;
   background-color: #FFFDF2;
 }
@@ -251,7 +251,7 @@ button#equal {
 }
 
 .calculator #display {
-  color: #f6f7f8;
+  color: #01070d;
 }
 
 .calculator button#clear {
@@ -279,7 +279,7 @@ button#equal {
   background-color: #0a041f;
 }
 
-.calculator.dark#display {
+.calculator.dark #display {
   color: #f8fafd;
 }
 
