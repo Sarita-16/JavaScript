@@ -1,4 +1,4 @@
-//Taking input using readLine
+/* //Taking input using readLine
 //let value = readLine("Taking input using readLine : ");
 //console.log(value);
 
@@ -154,3 +154,33 @@ console.log(
 // DSA
 
 // making portfolio
+ */
+
+/*********************************************** Log2Base2 **********************************************************************/
+// Sum of Digits
+let number = function (num) {
+  let sum = 0;
+  while (num > 0) {
+    r = num % 10;
+    sum = sum + r;
+    num = num / 10;
+  }
+  console.log("Sum of digit : " + sum);
+};
+number(12);
+
+// Print Diagonals of a N X N Box
+let diagonalBox = function (n) {
+  let j;
+  let k = n - 1;
+  for (let i = 0; i < n; i++) {
+    for (j = i; j < n; j++) {
+      if (j == i || j == k) {
+        console.log("*");
+      } else "  ";
+      k--;
+    }
+    console.log("\n");
+  }
+};
+diagonalBox(5);

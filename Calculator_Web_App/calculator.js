@@ -17,7 +17,6 @@ toggle.addEventListener("change", function () {
 });
 
 // --------------------------------------------------------------------------------------
-// develop
 
 const compare = {
   "+": (a, b) => a + b,
@@ -37,14 +36,13 @@ buttons.forEach((item) => {
     } else if (display.innerText != "" && item.id == "equal") {
       debugger;
       if (display.innerText.endsWith("%")) {
-        //display.innerText = +(display.innerText.replace("%", "") / 100);
         let removePercent = display.innerText.replace("%", "");
         let performPercent = +removePercent / 100;
         display.innerText = parseFloat(performPercent.toFixed(3));
       } else if (display.innerText.includes(".")) {
         display.innerText = eval(display.innerText).toFixed(3);
       }
-      display.innerText = eval(display.innerText);
+      display.innerText = eval(display.innerText).toFixed(3);
     } else if (display.innerText == "" && item.id == "equal") {
       display.innerText = "Empty!";
       setTimeout(() => (display.innerText = ""), 2000);
