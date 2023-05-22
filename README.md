@@ -245,3 +245,5 @@ Q. What can come inside the CallBack queue Or Task Queue?
 A. All the other Call Back Function setTimeOut(), DOM APis, eventListener() ... are from Call Back Queue.
 
 # calculator.html || calculator.css || calculator.js
+
+# binarySearch.js
