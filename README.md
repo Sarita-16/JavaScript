@@ -247,3 +247,12 @@ A. All the other Call Back Function setTimeOut(), DOM APis, eventListener() ... 
 # calculator.html || calculator.css || calculator.js
 
 # binarySearch.js
+
+# bubbleSort.js
+
+# luckySeven.js
+
+# sumOfSeveralArrays.js
+
+\\ Without Reduce
+\\ With Reduce :
