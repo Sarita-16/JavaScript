@@ -5,7 +5,7 @@ let binarySearch = function (arr, key) {
   let low = 0;
   let high = length - 1;
   while (low <= high) {
-    mid = Math.round((low + high) / 2);
+    let mid = Math.round((low + high) / 2);
     if (key == arr[mid]) {
       flag = 1;
       location = mid + 1;

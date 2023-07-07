@@ -27,7 +27,7 @@ let & const declaration
 ex : const a \\ Here we will find this type of error cause we didn't initialize the value of a & there will not occure any duplicacy
 
 \\ TypeError : Assingment to constant variable
-ex : const a = 10 \\ It is a conts type. It should be initialize & declare together & we can't assign any value later on
+ex : const a = 10 \\ Here this ex is not a TypeError cause it initialize & declare together. It is a conts type. It should be initialize & declare together & we can't assign any value later on
 
 \\ ReferenceError : Can not access before initialization
 ex :

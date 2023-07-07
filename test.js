@@ -184,3 +184,10 @@ let diagonalBox = function (n) {
   }
 };
 diagonalBox(5);
+
+function a() {
+  console.log("Hello Sarita");
+}
+a();
+
+drawBox(pickRandom(red));
