@@ -1,0 +1,28 @@
+h2::selection{
+    color: rgb(208, 167, 246);
+    background: rgb(53, 153, 53);
+}
+
+#candle {
+    margin-top: 30rem;
+    width: 15rem;
+    height: 40rem;
+    position: relative;
+    display: grid;
+}
+
+#glow,
+#flame,
+#blue-part,
+#thread,
+#candle-bottom {
+    position: absolute;
+    justify-self: center;
+}
+
+#thread::after,
+#blue-part::after,
+#wax::before {
+    content: '';
+    display: block;
+}
