@@ -48,7 +48,7 @@ const index = flowers.findIndex((flower) => flower === "Daisy");
 console.log("The index for Daisy: ", index, "\n");
 
 /*  ----------------------------------------------------------------------------------------------
-foor loop
+for loop
 ----------------------------------------------------------------------------------------------  */
 
 console.log("Using FOR() LOOP ---------");
