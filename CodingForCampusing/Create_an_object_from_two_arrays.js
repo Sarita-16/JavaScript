@@ -37,7 +37,6 @@ let convertToObj = function (arr3, arr4) {
     console.log("Arrays size are not same or one of them can be EMPTY array.");
     return null;
   }
-
   // Using Object.assign() method
   let result = Object.assign(
     ...arr3.map((item, index) => ({
@@ -47,3 +46,29 @@ let convertToObj = function (arr3, arr4) {
   console.log(result);
 };
 convertToObj(ar3, ar4);
+
+/*  ----------------------------------------------------------------------
+arr.reduce() method : Reduce the array to a single value & executes 
+a provided function for each value of the array (from left to right) & 
+the return value of the function is stored in an accumulator. 
+--------------------------------------------------------------------    */
+let ar5 = ["a", "b", "c", "d", "e"];
+let ar6 = [10, 20, 30, 40, 50];
+
+let convertToObject = function (arr5, arr6) {
+  if (arr5.length != arr6.length || arr5.length == 0 || arr6.length == 0) {
+    console.log("Either Arrays size are not same or any one of them is null");
+    return null;
+  }
+
+  // Using reduce() method
+  let object = arr5.reduce((acc, element, index) => {
+    return {
+      ...acc,
+      [element]: arr6[index],
+    };
+  }, {});
+  console.log(object);
+};
+
+convertToObject(ar5, ar6);
