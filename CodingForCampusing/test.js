@@ -1,22 +1,14 @@
-let a = [1, 2, 3, 4];
-let b = ["ram", "shyam", "sita", "gita"];
-
-// Checking if the array lengths are same
-// and none of the array is empty
-function convertToObj(a, b) {
-  if (a.length != b.length || a.length == 0 || b.length == 0) {
-    return null;
+function createObject(keys, values) {
+  let result = {};
+  let length = Math.min(keys.length, values.length);
+  for (let i = 0; i < length; i++) {
+    result[keys[i]] = values[i];
   }
-
-  // Using reduce() method
-  debugger;
-  let object = a.reduce((acc, element, index) => {
-    return {
-      ...acc,
-      [element]: b[index],
-    };
-  }, {});
-
-  return object;
+  return result;
 }
-console.log(convertToObj(a, b));
+debugger;
+// Example usage:
+let a = [1, 2, 3];
+let b = ["ram", "shyam", "sita", "gita"];
+let result = createObject(a, b);
+console.log(result);

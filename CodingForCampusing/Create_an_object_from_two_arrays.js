@@ -72,3 +72,39 @@ let convertToObject = function (arr5, arr6) {
 };
 
 convertToObject(ar5, ar6);
+
+/*  ------------------------------------------------------------------------
+Using Loop :
+------------------------------------------------------------------------  */
+let ar7 = [0, 1, 10, 11];
+let ar8 = ["Zoro", "One", "Two", "Three"];
+let arrayToObject = function (arr7, arr8) {
+  if (arr7.length != arr8.length || arr7.length == 0 || arr8.length == 0) {
+    console.log("ERROR 🔴");
+    return null;
+  }
+  let objResult = {};
+  for (let i = 0; i < arr7.length; i++) {
+    objResult[arr7[i]] = arr8[i];
+  }
+  console.log(objResult);
+};
+arrayToObject(ar7, ar8);
+
+/*  --------------------------------------------------------------------------
+Object.fromEntries() method : A standard built-in object which is used to
+transform a list of key-value pairs into an object.
+------------------------------------------------------------------------    */
+let ar9 = ["🔵", "🤍", "🟩", "🫐", "🦩"];
+let ar10 = ["Blue", "White", "Green", "Purple", "Pink"];
+let toObj = function (arr9, arr10) {
+  if (arr9.length != arr10.length || arr9.length == 0 || arr10.length == 0) {
+    console.log("ERROR 😡");
+    return null;
+  }
+  let objt = Object.fromEntries(
+    arr9.map((element, index) => [element, arr10[index]])
+  );
+  console.log(objt);
+};
+toObj(ar9, ar10);
