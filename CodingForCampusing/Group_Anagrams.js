@@ -14,8 +14,6 @@ let groupAnagrams = function (arr) {
         newArr.push(arr[j]);
       }
     }
-
-    console.log(newArr);
     result.push(newArr);
   }
   console.log(result);

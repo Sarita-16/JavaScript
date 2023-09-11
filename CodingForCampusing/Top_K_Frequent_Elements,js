@@ -1,0 +1,24 @@
+let frequentElements = function (arr, k) {
+  let arrayC = [];
+  let arrayE = [];
+  let resultArr = [];
+  let gistArr = [...new Set(arr)];
+  for (let i = 0; i < gistArr.length; i++) {
+    let count = 0;
+    for (let j = i; j < arr.length; j++) {
+      if (gistArr[i] == arr[j]) {
+        count++;
+      }
+    }
+    arrayC.push(count);
+    arrayE.push(gistArr[i]);
+  }
+  arrayC.sort();
+  arrayC.reverse();
+
+  for (let i = 0; i < k; i++) {
+    resultArr.push(arrayE[i]);
+  }
+  console.log(resultArr);
+};
+frequentElements([1, 1, 1, 2, 2, 3], 2);
