@@ -1,6 +1,8 @@
 let frequentElements = function (arr, k) {
+  const map = new Map();
   let arrayC = [];
   let arrayE = [];
+  let arrayInd = [];
   let resultArr = [];
   let gistArr = [...new Set(arr)];
   for (let i = 0; i < gistArr.length; i++) {
@@ -10,14 +12,19 @@ let frequentElements = function (arr, k) {
         count++;
       }
     }
+
     arrayC.push(count);
-    arrayE.push(gistArr[i]);
+    arrayInd.push(i);
   }
+  for (let x = 0; x < gistArr.length; x++) {
+    map.set(arrayC, arrayInd);
+  }
+
   arrayC.sort();
   arrayC.reverse();
 
   for (let i = 0; i < k; i++) {
-    resultArr.push(arrayE[i]);
+    resultArr.push(map.get(gistArr[arrayInd]));
   }
   console.log(resultArr);
 };
