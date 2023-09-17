@@ -5,5 +5,17 @@ let validParentheses = function (str) {
     "}": "{",
     "]": "[",
   };
+  for (let i of str) {
+    // 'of' = value || 'in' = index
+    if (!objChars[i]) {
+      // '!' change the condition 'true' to 'false' & 'false' to 'true'
+      stack.push(i);
+    } else if (objChars[i] == stack.pop()) {
+      true;
+    } else {
+      false;
+    }
+  }
+  console.log(stack.length === 0);
 };
-validParentheses("()[]{}");
+validParentheses("([)]{}");
