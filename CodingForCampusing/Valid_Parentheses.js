@@ -10,12 +10,10 @@ let validParentheses = function (str) {
     if (!objChars[i]) {
       // '!' change the condition 'true' to 'false' & 'false' to 'true'
       stack.push(i);
-    } else if (objChars[i] == stack.pop()) {
-      true;
-    } else {
-      false;
+    } else if (objChars[i] != stack.pop()) {
+      console.log(false);
     }
   }
   console.log(stack.length === 0);
 };
-validParentheses("([)]{}");
+validParentheses("([])");
