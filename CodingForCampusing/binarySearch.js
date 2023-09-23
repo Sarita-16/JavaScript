@@ -29,7 +29,9 @@ Using Filter
 -----------------------  */
 let binSearch = function (array, ele) {
   let result = array.filter((x) => x == ele);
-  if (result.length) console.log(ele + " is Found :)");
+  let index = array.indexOf(ele);
+  if (result.length)
+    console.log(ele + " is Found :) at the index of " + (index + 1));
   else console.log(ele + " is not Found :(");
 };
-binSearch([5, 9, 40, 54, 68, 70, 75, 80], 0);
+binSearch([5, 9, 40, 54, 68, 70, 75, 80], 5);
