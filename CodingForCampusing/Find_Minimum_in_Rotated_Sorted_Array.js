@@ -1,3 +1,5 @@
+/*  Error  */
+
 let sortedArray = function (arr) {
   let newArr = arr.sort();
   console.log(newArr[0]);
