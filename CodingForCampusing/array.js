@@ -3,6 +3,7 @@ console.log(arr);
 
 // Iterate all the elements
 for (let i of arr) {
+  // of = value || in = index
   console.log(i);
 }
 
