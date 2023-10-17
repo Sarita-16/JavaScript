@@ -1,3 +1,5 @@
+// Time Complexity Linear
+
 class Queue {
   constructor() {
     this.item = [];
