@@ -21,7 +21,7 @@ class LinkedList {
     return this.size;
   }
 
-  // Add a node in the beginning
+  // Add a node in the beginning (Append) : Time Complexity : O(1)
   prepend(value) {
     const newNode = new Node(value);
     // When list is empty
@@ -55,6 +55,24 @@ class LinkedList {
       console.log(`${listValue}`);
     }
   }
+
+  // Add a node in the End (Append) : Time COmplexity : O(n)
+  append(value) {
+    const newNode = new Node(value);
+    // When list is Empty
+    if (this.isEmpty()) {
+      this.head = newNode;
+    }
+    // When list is not Empty
+    else {
+      let lastNode = this.head;
+      while (lastNode.next != null) {
+        lastNode = lastNode.next;
+      }
+      lastNode.next = newNode;
+    }
+    this.size++;
+  }
 }
 
 const list = new LinkedList();
@@ -68,5 +86,11 @@ list.print();
 list.prepend(74);
 list.prepend(23);
 list.prepend(99);
+
+list.print();
+
+list.append(1);
+list.append(3);
+list.append(5);
 
 list.print();
