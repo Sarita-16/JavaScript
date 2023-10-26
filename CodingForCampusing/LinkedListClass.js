@@ -102,7 +102,7 @@ class LinkedList {
     }
   }
 
-  // Remove
+  // Remove by Index
   removeAt(index) {
     // When index is less than 0 or greater than size
     if (index < 0 || index >= this.size) {
@@ -125,6 +125,13 @@ class LinkedList {
     }
     this.size--;
     return removeNode.value;
+  }
+
+  // Remove by Value
+  removeValue() {
+    if (this.isEmpty) {
+      return "List is Empty ";
+    }
   }
 }
 
