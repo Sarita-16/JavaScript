@@ -154,6 +154,23 @@ class LinkedList {
       return "No such element Exist";
     }
   }
+
+  // Search
+  search(value) {
+    if (this.isEmpty()) {
+      return "List is Empty";
+    }
+    let currentNode = this.head;
+    let i = 0;
+    while (currentNode) {
+      if (currentNode.value === value) {
+        return `Element found at position ${i + 1}`;
+      }
+      currentNode = currentNode.next;
+      i++;
+    }
+    return "Element not Found";
+  }
 }
 
 const list = new LinkedList();
@@ -191,3 +208,5 @@ console.log(list.removeValue(47));
 console.log(list.removeValue(80));
 
 list.print();
+
+console.log(list.search(5));
