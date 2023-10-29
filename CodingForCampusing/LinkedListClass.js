@@ -128,9 +128,30 @@ class LinkedList {
   }
 
   // Remove by Value
-  removeValue() {
-    if (this.isEmpty) {
+  removeValue(value) {
+    // When list is empty
+    if (this.isEmpty()) {
       return "List is Empty ";
+    }
+    // Removing a node from the begining (HEad Node) : Time Complixity : O(1)
+    if (this.head.value === value) {
+      this.head = this.head.next;
+      this.size--;
+      return value;
+    }
+    // Removing node from middle or somewhere in the list : Time Complixity : O(n)
+    else {
+      let previousNode = this.head;
+      while (previousNode.next && previousNode.next.value !== value) {
+        previousNode = previousNode.next;
+      }
+      if (previousNode.next) {
+        let removeNode = previousNode.next;
+        previousNode.next = removeNode.next;
+        this.size--;
+        return value;
+      }
+      return "No such element Exist";
     }
   }
 }
@@ -160,5 +181,13 @@ list.insert(47, 4);
 list.print();
 
 console.log(list.removeAt(5));
+
+list.print();
+
+console.log(list.removeValue(99));
+
+console.log(list.removeValue(47));
+
+console.log(list.removeValue(80));
 
 list.print();
