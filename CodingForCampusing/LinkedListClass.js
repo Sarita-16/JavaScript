@@ -171,6 +171,9 @@ class LinkedList {
     }
     return "Element not Found";
   }
+
+  // Reverse
+  reverse() {}
 }
 
 const list = new LinkedList();
